@@ -10,7 +10,7 @@ Author: laljose
 /* --------------------------------------
    Layout
    -------------------------------------- */
-   .bgimg-1{
+ .bgimg-1{
    	text-align: center;
    }
 #features {
@@ -20,7 +20,7 @@ Author: laljose
 }
 #services{
 	text-align: center;
-	padding-top: 10px;
+	padding: 20px;
 }
 #services img:hover{
 	transform:scale(1.1);
@@ -55,6 +55,9 @@ body {
 .navbar{
 	background-color: white;
 }  
+ul{
+	list-style-type: none;
+}
 /* --------------------------------------
    Carousel
    -------------------------------------- */
@@ -82,6 +85,57 @@ body {
    -------------------------------------- */
 .row{
 	padding-bottom: 10px;
+}
+/*.................................................
+		Footer
+..................................................*/
+.col-sm-3 img{
+	padding-bottom: 3px;
+	padding-left: 16px;
+}
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 10px;
+}
+
+#searchInput {
+
+	width: 200px;
+
+}
+
+/*..............................................
+style from w3 css
+................................................*/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../../images/contact.jpg');
+    min-height: 100%;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1{
+        background-attachment: scroll;
+    }
 }
 /* --------------------------------------
    Media Queries
@@ -121,47 +175,4 @@ body {
 	#slide3 {
 		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
 	}
-}
-/*.................................................
-		Footer
-..................................................*/
-.col-sm-3 img{
-	padding-bottom: 3px;
-	padding-left: 16px;
-}
-footer {
-	background: #333;
-	color: #eee;
-	font-size: 11px;
-	padding: 10px;
-}
-/*..............................................
-style for contact using w3 css
-................................................*/
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1 {
-    opacity: 0.7;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('../../images/contact.jpg');
-    min-height: 100%;
-}
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
 }
